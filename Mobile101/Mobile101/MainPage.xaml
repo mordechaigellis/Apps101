@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Mobile101.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label x:Name="lblDisplay"  Text="Display..." HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Button x:Name="btnMethod" Clicked="btnMethod_Clicked" Text="Method"/>
+        <Label x:Name="txtEquation"/>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Button Grid.Row="1" Grid.Column="0" Clicked="Button_Click" Text ="7"/>
+            <Button Grid.Row="1" Grid.Column="1" Clicked="Button_Click" Text ="8" />
+            <Button Grid.Row="1" Grid.Column="2" Clicked="Button_Click" Text ="9"/>
+            <Button Grid.Row="1" Grid.Column="3" Text ="X" />
+
+            <Button Grid.Row="2" Grid.Column="0" Clicked="Button_Click" Text = "4" />
+            <Button Grid.Row="2" Grid.Column="1" Clicked="Button_Click" Text = "5" />
+            <Button Grid.Row="2" Grid.Column="2" Clicked="Button_Click" Text = "6" />
+            <Button Grid.Row="2" Grid.Column="3" Text= "-" />
+
+            <Button Grid.Row="3" Grid.Column="0" Clicked="Button_Click" Text = "1" />
+            <Button Grid.Row="3" Grid.Column="1" Clicked="Button_Click" Text = "2" />
+            <Button Grid.Row="3" Grid.Column="2" Clicked="Button_Click" Text = "3" />
+            <Button Grid.Row="3" Grid.Column="3" Text="+" />
+
+
+            <Button Grid.Row="4" Grid.Column="1" Clicked="Button_Click" Text = "0" />
+            <Button Grid.Row="4" Grid.Column="2" Clicked="Button_Click" Text = "." />
+            <Button Grid.Row="4" Grid.Column="3" Text = "=" />
+        </Grid>
+    </StackLayout>
+
+</ContentPage>
